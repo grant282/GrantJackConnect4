@@ -46,6 +46,11 @@ public class Board {
 		return cols;
 	}
 	
+	public void playturn(int cols, int player) {
+		if (player == 1) {
+			board[row(cols)][cols].setState(Cellstate.P1);
+		
+	
 	/**
 	 * Check if a proposed location is valid.
 	 * @param rowIndex row index to check
